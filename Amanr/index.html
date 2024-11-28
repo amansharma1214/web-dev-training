@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reunion Form</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <center>
+
+        <div class="container">
+            <h1>Reunion Form</h1>
+        <p>Time to rekindle some good ol' memories! See you soon!</p>
+
+        <p><strong>Date:</strong> 25-06-2023</p>
+        <p><strong>Time:</strong> 6pm onwards</p>
+        <p><strong>Address:</strong> Our garage</p>
+        
+        <form action="submit.php" method="post">
+            <label for="attendance">Would you like to join us?</label>
+            <input type="radio" id="yes" name="attendance" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="attendance" value="no">
+            <label for="no">No</label>
+            
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            <br>
+            
+            <label for="meal">Meal Preference:</label>
+            <input type="radio" id="vegetarian" name="meal" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+            <input type="radio" id="non-vegetarian" name="meal" value="non-vegetarian">
+            <label for="non-vegetarian">Non-Vegetarian</label>
+            
+            <label for="games">What kind of games are you interested in?</label>
+            <input type="checkbox" id="indoor" name="games[]" value="indoor">
+            <label for="indoor">Indoor</label>
+            <input type="checkbox" id="board" name="games[]" value="board">
+            <label for="board">Board</label>
+            <input type="checkbox" id="ball" name="games[]" value="ball">
+            <label for="ball">Ball games</label>
+            <input type="checkbox" id="outdoor" name="games[]" value="outdoor">
+            <label for="outdoor">Outdoor</label>
+            
+            <label for="questions">Do you have any questions?</label>
+            <textarea id="questions" name="questions"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</center>
+</body>
+</html>
